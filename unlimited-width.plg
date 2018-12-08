@@ -27,6 +27,7 @@ sed -i 's/max-width:1920px;//g' /usr/local/emhttp/plugins/dynamix/styles/*.css
 <INLINE>
 rm -rf &plugdir;
 rm -rf /boot/config/plugins/&name;
+echo
 echo "You must reboot for the uninstall to take effect"
 </INLINE>
 </FILE> 
