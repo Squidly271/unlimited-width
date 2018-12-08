@@ -1,6 +1,6 @@
 <?xml version='1.0' standalone='yes'?>
 <!DOCTYPE PLUGIN [
-<!ENTITY name      "CA Dynamix Unlimited Browser Width">
+<!ENTITY name      "unlimited-width">
 <!ENTITY author    "Andrew Zawadzki">
 <!ENTITY version   "2018.12.08">
 <!ENTITY plugdir   "/usr/local/emhttp/plugins/&name;">
@@ -8,7 +8,7 @@
 <!ENTITY pluginURL "https://raw.githubusercontent.com/&github;/master/plugins/&name;.plg">
 ]>
 
-<PLUGIN name="&name;" author="&author;" version="&version;" pluginURL="&pluginURL;" min="6.4.0">
+<PLUGIN name="&name;" author="&author;" version="&version;" pluginURL="&pluginURL;" min="6.6.0">
 
 <CHANGES>
 ###2018.12.08
@@ -23,10 +23,17 @@ sed -i 's/max-width:1920px;//g' /usr/local/emhttp/plugins/dynamix/styles/*.css
 </INLINE>
 </FILE>
 
+<FILE Name='/usr/local/emhttp/plugins/unlimited-width/README.md'>
+<INLINE>
+###CA Dynamix Unlimited Width###
+A plugin to allow Dynamix to utilize the entire width of your browser and not be artificially capped at 1920 pixel across
+</INLINE>
+</FILE>
+
+
 <FILE Run="/bin/bash" Method="remove">
 <INLINE>
-rm -rf &plugdir;
-rm -rf /boot/config/plugins/&name;
+rm -rf /boot/config/plugins/&name;.plg
 echo
 echo "You must reboot for the uninstall to take effect"
 </INLINE>
