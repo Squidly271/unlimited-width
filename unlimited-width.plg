@@ -1,0 +1,33 @@
+<?xml version='1.0' standalone='yes'?>
+<!DOCTYPE PLUGIN [
+<!ENTITY name      "CA Dynamix Unlimited Width">
+<!ENTITY author    "Andrew Zawadzki">
+<!ENTITY version   "2018.12.08">
+<!ENTITY plugdir   "/usr/local/emhttp/plugins/&name;">
+<!ENTITY github    "Squidly271/unlimited-width">
+<!ENTITY pluginURL "https://raw.githubusercontent.com/&github;/master/plugins/&name;.plg">
+]>
+
+<PLUGIN name="&name;" author="&author;" version="&version;" pluginURL="&pluginURL;" min="6.4.0">
+
+<CHANGES>
+###2018.12.08
+- Initial Release
+</CHANGES>
+
+<!-- The 'pre-install' script. -->
+
+<FILE Run="/bin/bash">
+<INLINE>
+sed -i 's/max-width:1920px;//g' /usr/local/emhttp/plugins/dynamix/styles/*.css
+</INLINE>
+</FILE>
+
+<FILE Run="/bin/bash" Method="remove">
+<INLINE>
+rm -rf &plugdir;
+rm -rf /boot/config/plugins/&name;
+echo "You must reboot for the uninstall to take effect"
+</INLINE>
+</FILE> 
+</PLUGIN>
