@@ -1,6 +1,6 @@
 <?xml version='1.0' standalone='yes'?>
 <!DOCTYPE PLUGIN [
-<!ENTITY name      "CA Dynamix Unlimited Width">
+<!ENTITY name      "CA Dynamix Unlimited Browser Width">
 <!ENTITY author    "Andrew Zawadzki">
 <!ENTITY version   "2018.12.08">
 <!ENTITY plugdir   "/usr/local/emhttp/plugins/&name;">
