@@ -33,7 +33,6 @@ A plugin to allow Dynamix to utilize the entire width of your browser and not be
 
 <FILE Run="/bin/bash" Method="remove">
 <INLINE>
-rm -rf /boot/config/plugins/&name;.plg
 echo
 echo "You must reboot for the uninstall to take effect"
 </INLINE>
