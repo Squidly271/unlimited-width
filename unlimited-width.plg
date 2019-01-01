@@ -5,10 +5,10 @@
 <!ENTITY version   "2018.12.08">
 <!ENTITY plugdir   "/usr/local/emhttp/plugins/&name;">
 <!ENTITY github    "Squidly271/unlimited-width">
-<!ENTITY pluginURL "https://raw.githubusercontent.com/&github;/master/&name;.plg">
+<!ENTITY pluginURL "https://raw.githubusercontent.com/&github;/master/plugins/&name;.plg">
 ]>
 
-<PLUGIN name="&name;" author="&author;" version="&version;" pluginURL="&pluginURL;" min="6.6.0">
+<PLUGIN name="&name;" author="&author;" version="&version;" pluginURL="&pluginURL;" min="6.6.0" support="https://forums.unraid.net/topic/76211-plugin-ca-dynamix-unlimited-width/">
 
 <CHANGES>
 ###2018.12.08
