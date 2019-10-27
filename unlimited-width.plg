@@ -2,7 +2,7 @@
 <!DOCTYPE PLUGIN [
 <!ENTITY name      "unlimited-width">
 <!ENTITY author    "Andrew Zawadzki">
-<!ENTITY version   "2019.01.19">
+<!ENTITY version   "2019.10.27">
 <!ENTITY plugdir   "/usr/local/emhttp/plugins/&name;">
 <!ENTITY github    "Squidly271/unlimited-width">
 <!ENTITY pluginURL "https://raw.githubusercontent.com/Squidly271/unlimited-width/master/unlimited-width.plg">
@@ -13,6 +13,9 @@
 <CHANGES>
 ###2018.12.08
 - Initial Release
+
+###2019.10.27
+- OCD: Fix font size on plugins tab
 </CHANGES>
 
 <!-- The 'pre-install' script. -->
@@ -25,7 +28,7 @@ sed -i 's/max-width:1920px;//g' /usr/local/emhttp/plugins/dynamix/styles/*.css
 
 <FILE Name='/usr/local/emhttp/plugins/unlimited-width/README.md'>
 <INLINE>
-###CA Dynamix Unlimited Width###
+####CA Dynamix Unlimited Width####
 A plugin to allow Dynamix to utilize the entire width of your browser and not be artificially capped at 1920 pixel across
 </INLINE>
 </FILE>
